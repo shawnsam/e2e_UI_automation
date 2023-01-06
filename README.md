@@ -16,7 +16,7 @@
  For installing he required dependencies to run the automation Suite, run the below command (from the folder package.json is located). 
 `npm install`\n
 This will download and install all required dependencies to node modules folder.
-## Usage
+# Usage
 
 To run the web automation suite you can use the command :
 `npm run test`.
@@ -28,12 +28,12 @@ To run the web automation suite you can use the command :
 4. Application redirects to Success Page when a valid user logs in
 5. Success Message is displayed upon login
 6. Application redirects to Login Page upon clicking the log out button
-# Other Edge Cases(Not Implemented)
+## Other Edge Cases(Not Implemented)
 1. Login button color should be red after validation while logging in with invalid credentials
 2. Back Navigation from Success Page should keep the user in Success Page itself.
 3. Proper Validation Error should be shown when user provide an email in incorrect format.
 
-## Framework Enhancements - To Do
+# Framework Enhancements - To Do
 - Reporting Tools (e.g: Allure)
 - Utillity Classes (for generic methods)
 - Data Paramterisation ()
