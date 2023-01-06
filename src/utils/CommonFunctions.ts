@@ -4,6 +4,8 @@ export class CommonFunctions {
     public constructor(page: Page) {
         this.page = page;
     }
+
+    // return Background Color Name of the element with the provided selector
     public async getBackgroundColorName(selector: string) {
         const color = await this.page.evaluate(selector => {
             const element = document.querySelector(selector);

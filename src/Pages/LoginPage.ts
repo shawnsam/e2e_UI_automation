@@ -10,29 +10,33 @@ export class LoginPage {
         this.page = page;
         this.commonFunctions = new CommonFunctions(page)
     }
-    public async setEmail(username: string) {
-        await this.page.type(this.txtEmail, username);
+    //Set the provided value in Email Field
+    public async setEmail(email: string) {
+        await this.page.type(this.txtEmail, email);
     }
+    //Set the provided value in password Field
     public async setPassword(password: string) {
         await this.page.type(this.txtPassword, password);
     }
+    //clicks on the login Button
     public async clickOnLoginBtn() {
         await this.page.click(this.btnSubmit);
     }
+    //get the Background color Name of login Button
     public async getBackgroundColorOfLoginBtn() {
-        const bgColor = await this.commonFunctions.getBackgroundColorName(this.btnSubmit)
-        return bgColor
-
+        return await this.commonFunctions.getBackgroundColorName(this.btnSubmit)
     }
-
-    public async login(username: string, password: string): Promise<void> {
-        await this.setEmail(username)
+    // Performs the login action with the provided email & password
+    public async login(email: string, password: string): Promise<void> {
+        await this.setEmail(email)
         await this.setPassword(password)
         await this.clickOnLoginBtn()
     }
+    //get the Text Displayed in Login Btn
     public async getTextFromLoginBtn() {
         return await this.page.$eval(this.btnSubmit, (element) => element.textContent);
     }
+    //Returns a boolean value based on whether the login button is present
     public async isLoginBtnPresent() {
         return await this.page.$(this.btnSubmit) !== null
     }
