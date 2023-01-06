@@ -1,5 +1,5 @@
 # test-automation-quickstart
- This Auomation framework is developed using puppeteer & JEST testing framework. It covers the end to end Testcases of simple-Plain Login Form.
+ This test repo is used to automate basic straightforward scenarios for a react-based login form. The repo is developed using puppeteer & jest testing frameworks. It can be forked to enhance its capabilities.
 
 ## Concepts Included
 * Page Object Model
@@ -32,3 +32,12 @@ To run the web automation suite you can use the command :
 1. Login button color should be red after validation while logging in with invalid credentials
 2. Back Navigation from Success Page should keep the user in Success Page itself.
 3. Proper Validation Error should be shown when user provide an email in incorrect format.
+
+## Framework Enhancements - To Do
+- Reporting Tools (e.g: Allure)
+- Utillity Classes (for generic methods)
+- Data Paramterisation ()
+- Logs
+- Jenkins file
+- Configs (enviornments,browsers,..etc)
+- Dockerisation
