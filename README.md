@@ -2,19 +2,19 @@
  This Auomation framework is developed using puppeteer & JEST testing framework. It covers the end to end Testcases of simple-Plain Login Form.
 
 ## Concepts Included
-Page Object Model
+* Page Object Model
 ## Tools
-*TypeScript
-*Puppeteer
-*JEST
-*NodeJS
-*NPM
+* TypeScript
+* Puppeteer
+* JEST
+* NodeJS
+* NPM
 
 
 ## Installation of dependency node modules
 
  For installing he required dependencies to run the automation Suite, run the below command (from the folder package.json is located). 
-`npm install`
+`npm install`\n
 This will download and install all required dependencies to node modules folder.
 ## Usage
 
