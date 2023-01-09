@@ -1,4 +1,4 @@
-# test-automation-quickstart
+# e2e-automation-quickstart
  This test repo is used to automate basic straightforward scenarios for a react-based login form. The repo is developed using puppeteer & jest testing frameworks. It can be forked to enhance its capabilities.
 
 ## Concepts Included
